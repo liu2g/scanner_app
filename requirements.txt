@@ -1,4 +1,4 @@
 pathlib2 @ file:///tmp/build/80754af9/pathlib2_1594380969706/work
 numpy==1.18.5
-opencv==3.4.2
+opencv-python
 matplotlib==3.2.2

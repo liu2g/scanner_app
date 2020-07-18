@@ -7,12 +7,12 @@ The software dependencies of the program is listed below.
 Python 3.7.7
 pathlib2
 numpy V1.18.5
-opencv V3.4.2
+opencv
 matplotlib V3.2.2
 ```
 To install all required packages, run
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 **Note:** The exact version of the package is not required, though it is suggested to use the same software dependencies.
 

@@ -37,10 +37,10 @@ for f in img_paths:
     # Step 6: fill in result buffer
     img_results.append(img_pretty)
 
-# To use matplotlib show results
-show_img(*img_results)
+# # To use matplotlib show results
+# show_img(*img_results)
 
-# To output results to files
-# for i, r in enumerate(img_results):
-#     rpath = RESULTS_DIR.joinpath(img_paths[i].name)
-#     cv2.imwrite(str(rpath), r)
+# # To output results to files
+for i, r in enumerate(img_results):
+    rpath = RESULTS_DIR.joinpath(img_paths[i].name)
+    cv2.imwrite(str(rpath), r)
