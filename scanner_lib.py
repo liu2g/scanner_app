@@ -112,7 +112,7 @@ def contour_img(img_0, img_edged):
     cnts = sorted(cnts, key=cv2.contourArea, reverse=True)
     
     cnt_len = cv2.arcLength(cnts[0], closed=True)
-    poly = cv2.approxPolyDP(cnts[0], epsilon=0.02*cnt_len, closed=True)
+    poly = np.squeeze(cv2.approxPolyDP(cnts[0], epsilon=0.02*cnt_len, closed=True))
     
     # cv2.drawContours(img_0, cnts[0], -1, (0,255,0), 2)
     cv2.drawContours(img_0, [poly], -1, (0,255,0), 2)
